@@ -6,11 +6,7 @@ export function useActiveInput() {
 
   useEffect(() => {
     const handleFocus = (e) => {
-      if (
-        e.target.matches(
-          'input[type="text"], input[type="number"], input[type="email"], input[type="password"], input[type="tel"], input[type="search"], textarea'
-        )
-      ) {
+      if (e.target.matches("input, textarea")) {
         setActiveInputId(e.target.id || e.target.name || "unnamed-input");
         axios.post("/setKeepInput", {
           keepInput: false,
