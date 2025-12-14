@@ -11,23 +11,27 @@ Our goal is to create a visually appealing and user-friendly phone interface tha
 This project is inspired by **QBPhone** from **QBCore**, combining its core functionalities with a fresh aesthetic that appeals to modern users. Our redesign aims to modernize the user experience while retaining the familiar features players love.
 
 ## Dependencies
+
 for QB
+
 - **[QB Core](https://github.com/qbcore-framework/qb-core "QB Core")**: This project relies on the QBCore framework for core functionalities.
 - **[QB Banking](https://github.com/qbcore-framework/qb-banking "QB Banking")**: QB Banking is need for digital banking app or invoices.
 
 for ESX
+
 - **[ESX Core](https://github.com/esx-framework/esx_core "ESX Core")**: This project relies on the ESX framework for core functionalities.
 - **[ESX Banking](https://github.com/esx-framework/esx_banking "ESX Banking")**: ESX Banking is need for digital banking app.
 - **[ESX Billing](https://github.com/esx-framework/esx_billing "ESX Billing")**: ESX Banking is need for billing on banking app.
 
 for QBX
-    TODO updates documentation
+TODO updates documentation
 
 for OX (inprogress)
 
 **IMPORTANT**: If you use others **garage, housing, banking and invoice resource** you still can use this phone but need a little changes on **server/core/[your fw].lua** then update query for retrieving datas following structure, please dont change the structure if you dont want enter to .jsx code!
 
 always need
+
 - **[OX Lib](https://github.com/overextended/ox_lib "OX Lib")**: OX Lib is also required to ensure seamless integration with existing systems.
 
 ## Tech Stack
@@ -124,6 +128,7 @@ https://discord.com/channels/1012753553418354748/1289265300457525269/12892653004
 [https://www.youtube.com/watch?v=sE6SahWlA3U](https://www.youtube.com/watch?v=sE6SahWlA3U)
 
 ## FORUM
+
 https://forum.cfx.re/t/open-source-z-phone-release/5272649
 
 ## SUPPORT
@@ -152,6 +157,15 @@ Thank you for your support! [ko-fi](https://ko-fi.com/alfaben)
                width="50px"
                alt="QBStevie"
                /><br /><sub><b>QBStevie</b></sub></a>
+         </td>
+         <td align="center" valign="top">
+            <a href="https://github.com/Qu3rt"
+                style="text-decoration: none;"
+               ><img
+               src="https://avatars.githubusercontent.com/u/64334136?v=4"
+               width="50px"
+               alt="Qu3rt"
+               /><br /><sub><b>Qu3rt</b></sub></a>
          </td>
       </tr>
    </tbody>
