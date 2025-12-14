@@ -59,6 +59,13 @@ local function DisableDisplayControlActions()
     DisableControlAction(0, 245, true) -- disable chat
 end
 
+RegisterNUICallback('setKeepInput', function(body, cb)
+    if Config.EnableWalkMode then
+        SetNuiFocusKeepInput(body.keepInput)
+    end
+    cb('ok')
+end)
+
 function OpenPhone()
     local hasWeapon, weaponHash = GetCurrentPedWeapon(PlayerPedId(), true)
     if weaponHash ~= GetHashKey("WEAPON_UNARMED") then
@@ -70,7 +77,9 @@ function OpenPhone()
         if HasPhone then
             PhoneData.PlayerData = xCore.GetPlayerData()
             SetNuiFocus(true, true)
-            -- SetNuiFocusKeepInput(true)
+            if Config.EnableWalkMode then
+                SetNuiFocusKeepInput(true)
+            end
             SendNUIMessage({
                 event = 'z-phone',
                 isOpen = true,
