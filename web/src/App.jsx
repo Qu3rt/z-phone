@@ -34,8 +34,10 @@ import { faker } from "@faker-js/faker";
 import axios from "axios";
 import { FaBell } from "react-icons/fa6";
 import { MdCall } from "react-icons/md";
+import { useActiveInput } from "./hooks/UseActiveInput";
 
 function App() {
+  useActiveInput();
   const {
     notificationMessage,
     menu,
